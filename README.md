@@ -19,6 +19,11 @@ board = Board(3,6,13,10)
 board()
 ```
 
+*size:* the matrix NxN
+*nb_agents:* the number of agents
+*seed:* a given combination
+*max_turn:* the number of max tries
+
 - OR run the notebook already created `taquin.ipynb`
 
 ### Current work
@@ -64,7 +69,5 @@ Our code is an implementation of a solution for the **Taquin puzzle** using a **
 There are several ways our implementation could be improved:
 
 - **Efficiency**: The implementation of the algorithm could be optimized to reduce computation time. For example, the `recursive()` function currently performs a depth-first search to resolve conflicts. This can be slow for large boards or complex scenarios. Alternative conflict resolution methods could be explored, such as a more efficient search algorithm or using machine learning techniques to learn how to avoid conflicts.
-
 - **Flexibility**: The code is currently designed to work with a specific board and set of agents. To make the code more flexible, it could be modified to accept input parameters for the board size, number of agents, and starting positions. Additionally, the code could be made more modular, with separate functions for the various components of the algorithm, so that different parts of the algorithm can be modified or replaced as needed.
-
 - **Robustness**: The code could be made more robust to handle unexpected scenarios, such as agents that stop responding or become stuck in a loop. One possible solution would be to implement a timeout mechanism to detect when an agent is taking too long to respond, and take appropriate action (such as assuming the agent has crashed and removing it from the board). Another approach would be to implement a loop detection mechanism to detect when an agent is stuck in a loop, and take appropriate action (such as forcing the agent to take a different path).
