@@ -19,10 +19,10 @@ board = Board(3,6,13,10)
 board()
 ```
 
-*size:* the matrix NxN
-*nb_agents:* the number of agents
-*seed:* a given combination
-*max_turn:* the number of max tries
+*size:* the matrix NxN  
+*nb_agents:* the number of agents  
+*seed:* a given combination  
+*max_turn:* the number of max tries  
 
 - OR run the notebook already created `taquin.ipynb`
 
