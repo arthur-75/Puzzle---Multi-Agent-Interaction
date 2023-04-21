@@ -8,10 +8,10 @@ We have developed a multi-agent system whose role is to reconstruct a puzzle usi
 
 ```python
 from puzzle_working import Board
-board = Board(5,10,13,50)
+board = Board(3,5,13,10)
 board()
 ```
-
+- OR run the notebook already created `taquin.ipynb`
 #### Authors
 
 - Arthur Sarmini Det Satouf
@@ -20,7 +20,7 @@ board()
 
 #### Current work
 
- Our code is an implementation of a solution for the **Taquin puzzle** using a **multi-agent system**. The puzzle is represented as a board, which is a square matrix of size N. The goal is to move the tiles on the board to reach a specific configuration where the tiles are ordered from 0 to N*N-1 from top to bottom and from left to right, with the empty cell in the last position. The solution uses multiple agents, where each agent is responsible for moving a specific tile to its correct position. Each agent runs on a separate thread and uses message passing to communicate with other agents.
+Our code is an implementation of a solution for the **Taquin puzzle** using a **multi-agent system**. The puzzle is represented as a board, which is a square matrix of size N. The goal is to move the tiles on the board to reach a specific configuration where the tiles are ordered from 0 to N*N-1 from top to bottom and from left to right, with the empty cell in the last position. The solution uses multiple agents, where each agent is responsible for moving a specific tile to its correct position. Each agent runs on a separate thread and uses message passing to communicate with other agents.
 
 **The Agent** class is defined as a subclass of **Thread**. The **run** method is the entry point of the thread. Each agent keeps track of its current position and target position on the board. In each turn, the agent receives messages from other agents, decides on its next move based on the received messages, and broadcasts its next position and priority to other agents. The priority determines the order in which conflicts between agents are resolved. A conflict occurs when two or more agents want to move to the same position in the same turn. The agent with the higher priority wins the conflict, and the other agent(s) are forced to move elsewhere.
 
@@ -36,22 +36,25 @@ board()
 
 #### Demo
 
-- Round 0 
+- Round 0
 
-![round 0](Round_0.png)
-- Round 1 
+![round 0](img/Round_0.png)
 
-![round 1](Round_1.png)
-- Round 2 
+- Round 1
 
-![round 2](Round_2.png)
-- Round 3 
+![round 1](img/Round_1.png)
 
-![round 3](Round_3.png)
-- Last round 4 
+- Round 2
 
-![round 4](Round_4.png)
+![round 2](img/Round_2.png)
 
+- Round 3
+
+![round 3](img/Round_3.png)
+
+- Last round 4
+
+![round 4](img/Round_4.png)
 
 #### Future enhancements
 
