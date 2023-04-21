@@ -14,7 +14,8 @@ We have developed a multi-agent system whose role is to reconstruct a puzzle usi
 
 ```python
 from puzzle_working import Board
-board = Board(3,6,13,10)
+#size: int= 3 , nb_agents: int=6, seed: int = 13, max_turn: int = 10
+board = Board(3,6,13,10) 
 board()
 ```
 
