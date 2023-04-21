@@ -2,23 +2,25 @@
 
 We have developed a multi-agent system whose role is to reconstruct a puzzle using a cognitive approach. In the modeling that is proposed, each agent represents a piece of the puzzle, which is of size n*n.
 
-#### Run Game
-
-- Create a notebook and copy the code below :
-
-```python
-from puzzle_working import Board
-board = Board(3,5,13,10)
-board()
-```
-- OR run the notebook already created `taquin.ipynb`
-#### Authors
+### Authors
 
 - Arthur Sarmini Det Satouf
 - Céline Goncalves
 - Thomas Danguilhen
 
-#### Current work
+### Run Game
+
+- Create a notebook and copy the code below :
+
+```python
+from puzzle_working import Board
+board = Board(3,6,13,10)
+board()
+```
+
+- OR run the notebook already created `taquin.ipynb`
+
+### Current work
 
 Our code is an implementation of a solution for the **Taquin puzzle** using a **multi-agent system**. The puzzle is represented as a board, which is a square matrix of size N. The goal is to move the tiles on the board to reach a specific configuration where the tiles are ordered from 0 to N*N-1 from top to bottom and from left to right, with the empty cell in the last position. The solution uses multiple agents, where each agent is responsible for moving a specific tile to its correct position. Each agent runs on a separate thread and uses message passing to communicate with other agents.
 
@@ -34,29 +36,29 @@ Our code is an implementation of a solution for the **Taquin puzzle** using a **
 
 **The broadcast** method is used to send a message to all other agents. **The recursive** method is used to find an alternative path in case of conflicts. If the agent cannot find a valid path, it indicates that it does not want to move by broadcasting its current position with a high priority.
 
-#### Demo
+### Demo
 
-- Round 0
+- **Round 0**
 
 ![round 0](img/Round_0.png)
 
-- Round 1
+- **Round 1**
 
 ![round 1](img/Round_1.png)
 
-- Round 2
+- **Round 2**
 
 ![round 2](img/Round_2.png)
 
-- Round 3
+- **Round 3**
 
 ![round 3](img/Round_3.png)
 
-- Last round 4
+- **Last round 4**
 
 ![round 4](img/Round_4.png)
 
-#### Future enhancements
+### Future enhancements
 
 There are several ways our implementation could be improved:
 
