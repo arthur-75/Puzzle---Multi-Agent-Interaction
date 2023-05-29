@@ -4,7 +4,7 @@ We have developed a multi-agent system whose role is to reconstruct a puzzle usi
 
 ### Authors
 
-- Arthur Sarmini Det Satouf
+- Arthur Satouf
 - Céline Goncalves
 - Thomas Danguilhen
 
